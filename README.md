@@ -1,28 +1,27 @@
-### Descrição de projeto utilizada para gerar os sistemas
+### Project description used to generate the systems
 
-O projeto de backend para a biblioteca virtual, a ser desenvolvido em \<linguagem do
-projeto\>, utilizando o framework \<framework do projeto\> e o Microsoft SQL Server
-como banco de dados, realizará o registro e o gerenciamento de livros e estudantes.
-Os dados dos alunos consistirão em detalhes pessoais e histórico de aluguel, enquanto
-para os livros incluirão título, autor, ISBN, status etc. Apenas estudantes registrados
-podem alugar um livro desde que esteja disponível. Uma vez que o livro é alugado,
-seu status no sistema é atualizado para ”Alugado”.
-A devolução de cada livro será manualmente confirmada por um bibliotecário ou
-administrador, que pode então atualizar o status do livro para ”Disponível”, ”Reser-
-vado”ou ”Em manutenção”com base na condição física do livro e nas futuras reservas.
-Para gerenciar efetivamente os períodos de empréstimo, os administradores do
-sistema podem definir durações de empréstimo padrão. Este período de empréstimo
-padrão se aplica a todos os livros, sem exceções.
-Os bibliotecários serão registrados no sistema e podem ser gerenciados (CRUD)
-por administradores. Um usuário administrador tem amplos direitos de sistema, in-
-cluindo gerenciamento de todas as entidades do sistema e alteração de configurações
-do sistema. Os bibliotecários têm direitos mais limitados, focados principalmente na
-realização de operações CRUD para os dados de livro e aluno.
-Os usuários administradores serão inicialmente pré-carregados no banco de dados
-com suas informações, que incluem credenciais. Essas credenciais e configurações
-gerais do sistema serão preenchidos a partir de um arquivo de configuração externo,
-que inclui configurações como a duração padrão do empréstimo do livro.
-O sistema diferenciará entre entidades - estudantes e livros - e usuários do sis-
-tema - bibliotecários e administradores. Os primeiros podem ser gerenciados mas não
-têm direitos de usuário do sistema, enquanto os últimos têm os direitos respectivos
-conforme definido em suas funções.
+The backend project for the virtual library, to be developed in \<language
+project\>, using the \<project framework\> framework and Microsoft SQL Server
+as a database, it will register and manage books and students.
+Student data will consist of personal details and rental history, while
+for books will include title, author, ISBN, status etc. Registered students only
+You can rent a book as long as it is available. Once the book is rented,
+its status in the system is updated to ”Rent”.
+The return of each book will be manually confirmed by a librarian or
+administrator, who can then update the book's status to "Available", "Reserved", or "Under Maintenance" based on the physical condition of the book and future reservations.
+To effectively manage loan periods, loan administrators
+system can set default loan durations. This loan period
+Standard applies to all books, no exceptions.
+Librarians will be registered in the system and can be managed (CRUD)
+by administrators. An administrator user has broad system rights, including
+including management of all system entities and changing settings
+of the system. Librarians have more limited rights, focused primarily on
+performing CRUD operations for book and student data.
+Admin users will initially be preloaded into the database
+with your information, which includes credentials. These credentials and settings
+general system parameters will be populated from an external configuration file,
+which includes settings such as the default book loan duration.
+The system will differentiate between entities - students and books - and system users.
+theme - librarians and administrators. The former can be managed but not
+have system user rights, while the latter have respective rights
+as defined in their roles.
